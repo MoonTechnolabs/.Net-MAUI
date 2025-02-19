@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiLoginDemo.Views.SignupPage"
+             xmlns:viewModel="clr-namespace:MauiLoginDemo.ViewModels"
+             Title="SignupPage">
+    <ContentPage.BindingContext>
+        <viewModel:SignupViewModel/>
+    </ContentPage.BindingContext>
+    <VerticalStackLayout Padding="10">
+        <Label Text="Sign Up" FontSize="24" HorizontalOptions="Center"/>
+        <Entry Placeholder="Enter Username" Text="{Binding userName}"/>
+        <Entry Placeholder="Enter Email" Text="{Binding email}"/>
+        <Entry Placeholder="Enter Password" IsPassword="True" Text="{Binding password}"/>
+        <Button Text="Create Account" Command="{Binding SignUpCommand}" HorizontalOptions="Center" CornerRadius="10"/>
+    </VerticalStackLayout>
+</ContentPage>

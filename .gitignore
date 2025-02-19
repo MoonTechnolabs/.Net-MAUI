@@ -1,0 +1,60 @@
+# Ignore Visual Studio and JetBrains Rider specific files
+.vs/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.vcxproj*
+
+# Build output
+bin/
+obj/
+
+# Ignore temporary files
+*.log
+*.tlog
+*.tmp
+*.bak
+*.swp
+*.sln.cache
+
+# Ignore NuGet packages
+*.nupkg
+*.snupkg
+packages/
+project.lock.json
+project.assets.json
+
+# Ignore build artifacts
+**/platforms/**/bin/
+**/platforms/**/obj/
+**/bin/
+**/obj/
+
+# Ignore generated files
+AppPackages/
+BundleArtifacts/
+.bundle/
+.nupkg
+node_modules/
+
+# Ignore Xamarin specific files
+*.apk
+*.aab
+*.ipa
+*.app
+*.xcuserdata/
+*.DS_Store
+*.lock.json
+
+# Ignore macOS and Linux specific files
+*.DS_Store
+*.vscode/
+
+# Ignore Rider and ReSharper specific files
+*.idea/
+*.sln.iml
+
+# Ignore local user settings
+Properties/launchSettings.json
